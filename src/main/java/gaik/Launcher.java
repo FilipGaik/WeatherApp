@@ -1,6 +1,8 @@
+package gaik;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
-import view.ViewFactory;
+import gaik.view.ViewFactory;
 
 public class Launcher extends Application {
     public static void main(String[] args) {

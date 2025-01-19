@@ -16,7 +16,7 @@ javafx {
     modules = ['javafx.controls', 'javafx.fxml', 'javafx.web']
 }
 
-mainClassName = 'Launcher'
+mainClassName = 'gaik.Launcher'
 
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
