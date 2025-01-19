@@ -1,7 +1,17 @@
 package gaik.controller;
 
-import gaik.WeatherManager;
+import gaik.view.ViewFactory;
 
 public abstract class BaseController {
-    protected  WeatherManager weatherManager;
+    protected ViewFactory viewFactory;
+    private final String fxmlName;
+
+    public BaseController(ViewFactory viewFactory, String fxmlName) {
+        this.viewFactory = viewFactory;
+        this.fxmlName = fxmlName;
+    }
+
+    public String getFxmlName() {
+        return fxmlName;
+    }
 }
