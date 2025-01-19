@@ -1,5 +1,6 @@
 import javafx.application.Application;
 import javafx.stage.Stage;
+import view.ViewFactory;
 
 public class Launcher extends Application {
     public static void main(String[] args) {
@@ -7,6 +8,7 @@ public class Launcher extends Application {
     }
     @Override
     public void start(Stage stage) {
-        stage.show();
+        ViewFactory viewFactory = new ViewFactory();
+        viewFactory.showMainWindow();
     }
 }
